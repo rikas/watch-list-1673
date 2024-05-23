@@ -1,0 +1,17 @@
+<div class="container my-4">
+  <h1>Add a new movie to "<%= @list.name %>"</h1>
+
+  <div class="mt-3">
+    <%= simple_form_for [@list, @bookmark] do |f| %>
+      <%= f.input :comment %>
+      <%= f.association :movie %>
+
+      <div class="form-actions">
+        <%= link_to "Cancel",
+        list_path(@list),
+        class: "btn btn-outline-secondary btn-lg me-2" %>
+        <%= f.submit "Add movie", class: "btn btn-primary btn-lg" %>
+      </div>
+    <% end %>
+  </div>
+</div>

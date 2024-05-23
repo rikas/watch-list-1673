@@ -1,0 +1,26 @@
+<div class="card-trip position-relative">
+  <div
+    class="
+      position-absolute m-2 fs-6 end-0 bg-black opacity-75 px-2 py-0 rounded
+    "
+  >
+    <i class="fa-solid fa-star text-warning"></i>
+    <span class="text-warning"><%= bookmark.movie.rating %></span>
+  </div>
+
+  <%= image_tag bookmark.movie.poster_url %>
+
+  <div class="card-trip-infos">
+    <div>
+      <h5><%= bookmark.movie.title %></h5>
+      <figure class="text-muted">
+        <blockquote class="blockquote">
+          <p>
+            <i class="fas fa-quote-left fa-xs text-primary"></i>
+            <em><%= bookmark.comment %></em>
+          </p>
+        </blockquote>
+      </figure>
+    </div>
+  </div>
+</div>
