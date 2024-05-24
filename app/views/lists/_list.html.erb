@@ -1,6 +1,6 @@
 <%= link_to list_path(list),
   class:"card-category link",
-  style:"background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)" do %>
+  style:"background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(#{cl_image_path list.cover.key})" do %>
   <h1><%= list.name %></h1>
   <div class="d-flex flex-row align-items-center fs-6">
     <i class="fa-solid fa-film me-1"></i>

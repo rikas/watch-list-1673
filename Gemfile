@@ -4,6 +4,8 @@ ruby "3.3.0"
 
 gem "autoprefixer-rails"
 gem "bootstrap", "~> 5.2"
+gem "cloudinary"
+gem 'dotenv-rails'
 gem "font-awesome-sass", "~> 6.1"
 gem 'rails-controller-testing', group: [:test]
 gem 'rspec-rails', group: [:test]

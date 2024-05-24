@@ -6,19 +6,26 @@
   <p><em>A curated list by Ricardo</em></p>
 </div>
 
-<div class="container">
-  <div class="d-flex justify-content-end my-4">
-    <%= link_to new_list_path, class: "btn btn-primary btn-lg" do %>
-      <i class="fa-solid fa-plus"></i>
-      Add new list
-    <% end %>
-  </div>
+<%#= cl_image_tag "z8poxv3m7fc8hf2izn3k", width: "300" %>
+<%#= cl_image_tag "fofmyyvnwc7fv9mwvzem",
+width: 150,
+height: 150,
+crop: :thumb,
+gravity: :face %>
 
-  <div class="row">
-    <% @lists.each do |list| %>
-      <div class="col-3">
-        <%= render list %>
-      </div>
-    <% end %>
+  <div class="container">
+    <div class="d-flex justify-content-end my-4">
+      <%= link_to new_list_path, class: "btn btn-primary btn-lg" do %>
+        <i class="fa-solid fa-plus"></i>
+        Add new list
+      <% end %>
+    </div>
+
+    <div class="row">
+      <% @lists.each do |list| %>
+        <div class="col-3">
+          <%= render list %>
+        </div>
+      <% end %>
+    </div>
   </div>
-</div>
